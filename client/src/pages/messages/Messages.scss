@@ -1,0 +1,79 @@
+.messages-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+  .messages-container {
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .status-text {
+      text-align: center;
+      font-size: 16px;
+      color: #666;
+      &.error {
+        color: crimson;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+
+      th, td {
+        padding: 14px;
+        text-align: left;
+        border-bottom: 1px solid #eaeaea;
+      }
+
+      th {
+        background-color: #f5f5f5;
+        font-weight: 600;
+        color: #555;
+      }
+
+      tr.unread {
+        background-color: #f9fdf9;
+        font-weight: 500;
+      }
+
+      .link {
+        color: #1dbf73;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .mark-read {
+        background-color: #1dbf73;
+        color: white;
+        border: none;
+        padding: 6px 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+          background-color: #16a463;
+        }
+      }
+
+      .read-label {
+        font-size: 13px;
+        color: #999;
+      }
+    }
+  }
+}

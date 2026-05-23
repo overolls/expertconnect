@@ -1,0 +1,32 @@
+.sellerProfile {
+    padding: 40px;
+  
+    .sellerInfo {
+      text-align: center;
+  
+      img {
+        width: 100px;
+        border-radius: 50%;
+      }
+  
+      button {
+        margin-top: 10px;
+        background-color: #1dbf73;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  
+    .sellerGigs {
+      margin-top: 40px;
+  
+      .gigList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  }
+  

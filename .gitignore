@@ -1,0 +1,28 @@
+﻿# Firebase sensitive files
+client/src/utils/firebase.js
+api/serviceAccountKey.json
+*.key
+*.pem
+
+# Environment variables
+.env
+.env.local
+
+# Node modules
+node_modules/
+api/node_modules/
+client/node_modules/
+
+# Build outputs
+dist/
+build/
+client/build/
+api/dist/
+
+# IDE files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,152 @@
+.featured {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: #020f06;
+  color: white;
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      h1 {
+        font-size: 50px;
+
+        span {
+          font-style: italic;
+          font-weight: 300;
+        }
+      }
+
+      .search {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        max-width: 500px;
+
+        .searchInput {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 0 10px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+
+          input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 15px 0;
+
+            &::placeholder {
+              color: gray;
+            }
+          }
+        }
+
+        button {
+          width: 120px;
+          height: 50px;
+          border: none;
+          background-color: #1dbf73;
+          color: white;
+          font-weight: 500;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #17a463;
+          }
+        }
+      }
+
+      .popular {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        span {
+          font-weight: 400;
+        }
+
+        button {
+          color: white;
+          border: 1px solid white;
+          padding: 5px 12px;
+          border-radius: 20px;
+          background-color: transparent;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: white;
+            color: #013914;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 100%;
+        max-height: 500px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 40px 0;
+
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .left {
+        width: 100%;
+        h1 {
+          font-size: 32px;
+        }
+        .search {
+          width: 100%;
+        }
+      }
+
+      .right {
+        margin-top: 40px;
+        width: 100%;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+* {
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // Prevent horizontal overflow
+  width: 100%;
+}

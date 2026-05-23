@@ -1,0 +1,23 @@
+// client/src/pages/pay/Pay.scss
+.pay {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+  
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      text-align: center;
+  
+      h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+        color: #222;
+      }
+    }
+  }
+  

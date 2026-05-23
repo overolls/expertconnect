@@ -1,0 +1,30 @@
+// client/src/components/checkoutForm/CheckoutForm.scss
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    button {
+      background-color: #1dbf73;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+  
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  
+    .message {
+      font-size: 14px;
+      color: crimson;
+      text-align: center;
+    }
+  }
+  

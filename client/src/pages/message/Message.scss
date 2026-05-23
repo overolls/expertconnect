@@ -1,0 +1,109 @@
+.message-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+
+  .message-container {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #f8f8f8;
+    font-weight: 500;
+    border-bottom: 1px solid #eaeaea;
+
+    .back-link {
+      color: #1dbf73;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .chat-with {
+      font-size: 16px;
+    }
+  }
+
+  .message-thread {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+
+    .message-item {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+
+      &.sent {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+
+        .message-text {
+          background-color: #1dbf73;
+          color: white;
+        }
+      }
+
+      &.received {
+        .message-text {
+          background-color: #f0f0f0;
+        }
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .message-text {
+        padding: 12px 16px;
+        border-radius: 18px;
+        max-width: 60%;
+        word-wrap: break-word;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .message-form {
+    display: flex;
+    border-top: 1px solid #eaeaea;
+    padding: 15px 30px;
+    gap: 10px;
+
+    textarea {
+      flex: 1;
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      resize: none;
+      font-size: 14px;
+      min-height: 50px;
+    }
+
+    button {
+      padding: 0 24px;
+      background-color: #1dbf73;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.explore {
+    padding: 40px;
+  
+    .container {
+      max-width: 1000px;
+      margin: auto;
+  
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      .freelancerList {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+  
+      .freelancerCard {
+        background: white;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 10px;
+        }
+  
+        button {
+          margin-top: 10px;
+          padding: 8px 16px;
+          background-color: #1dbf73;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
